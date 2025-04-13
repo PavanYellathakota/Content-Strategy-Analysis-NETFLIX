@@ -1,16 +1,5 @@
-<div style="background: linear-gradient(90deg, #E50914, #B90000); padding: 40px 20px; border-radius: 15px; text-align: center; animation: fadeIn 2s ease-in-out;">
-<h1 style="text-align:center; color:white; font-size:48px; margin-bottom: 10px">Netflix Content Strategy Analysis</h1>
-<h3 style="text-align:center; color:#ECEFF1; font-weight:normal; font-size: 20px;">Understanding What People Watch to Make Better Content Choices</h3>
-</div>
-
-<style>
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
-
-<br>
+# Netflix Content Strategy Analysis
+### Understanding What People Watch to Make Better Content Choices
 
 ---
 
