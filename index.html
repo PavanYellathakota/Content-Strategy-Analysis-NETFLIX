@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Content Strategy Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #c00;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+    .center {
+      text-align: center;
+    }
+    .banner {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Netflix Content Strategy Analysis</h1>
+  <h3>Understanding What People Watch to Make Better Content Choices</h3>
+
+  <hr/>
+
+  <h2>Overview</h2>
+  <p>Conducted a detailed analysis of Netflix content viewership data for 2023 to determine optimal content types. Examined total hours viewed, growth rates, and patterns including seasonal, monthly, and weekly viewership. Aims to enhance content strategies for Netflix to boost viewership.</p>
+
+  <h2>Dataset Details</h2>
+  <ul>
+    <li><strong>Total Records</strong>: 24,812</li>
+    <li><strong>After Cleaning</strong>: 19,158 (removed duplicates, nulls, invalid values)</li>
+  </ul>
+
+  <h2>Tools Used</h2>
+  <ul>
+    <li><strong>Pandas</strong>: Data cleaning and analysis</li>
+    <li><strong>Plotly</strong>: Bar charts and line plots</li>
+  </ul>
+
+  <h2>Analysis and Results</h2>
+
+  <h3>1. Total Hours Viewed by Content Type</h3>
+  <ul>
+    <li><strong>Shows</strong>: 74.63 billion hours</li>
+    <li><strong>Movies</strong>: 44.89 billion hours</li>
+  </ul>
+  <img src="assets/results/fig1.png" alt="Total Hours Viewed by Content Type"/>
+  <p><strong>Insight</strong>: Shows outperform Movies in viewership. Recommend prioritizing development of engaging Shows.</p>
+
+  <h3>2. Total Hours Viewed by Language</h3>
+  <ul>
+    <li>English: 92.38B</li>
+    <li>Korean: 13.19B</li>
+    <li>Non-English: 8.02B</li>
+    <li>Japanese: 5.00B</li>
+    <li>Hindi: 0.85B</li>
+    <li>Russian: 0.08B</li>
+  </ul>
+  <img src="assets/results/fig2.png" alt="Total Hours Viewed by Language"/>
+  <p><strong>Insight</strong>: English content dominates. Suggest increased investment in English and Korean content.</p>
+
+  <h3>3. Growth Rate Analysis</h3>
+  <p>English and Korean content exhibited highest growth rates (2015–2023).</p>
+  <p><strong>Insight</strong>: Rising popularity indicates sustained production in English and Korean.</p>
+
+  <h3>4. Seasonal Viewership Analysis</h3>
+  <ul>
+    <li>Winter: 19.13B</li>
+    <li>Fall: 17.71B</li>
+    <li>Summer: 16.53B</li>
+    <li>Spring: 16.18B</li>
+  </ul>
+  <img src="assets/results/fig6.png" alt="Viewership by Season"/>
+  <p><strong>Insight</strong>: Winter yields highest viewership. Propose major releases in Winter.</p>
+
+  <h3>5. Monthly Viewership Analysis</h3>
+  <ul>
+    <li><strong>Top</strong>: December (7.93B), June (6.22B)</li>
+    <li><strong>Bottom</strong>: May (5.22B), July (4.98B)</li>
+  </ul>
+  <img src="assets/results/fig7.png" alt="Monthly Viewership"/>
+  <p><strong>Insight</strong>: December peaks. Schedule big releases in December and June.</p>
+
+  <h3>6. Weekly Viewership Analysis</h3>
+  <ul>
+    <li>Friday: 28.45B</li>
+    <li>Thursday: 16.49B</li>
+    <li>Wednesday: 12.34B</li>
+    <li>Saturday: 4.20B</li>
+    <li>Tuesday: 3.98B</li>
+    <li>Monday: 2.80B</li>
+    <li>Sunday: 1.32B</li>
+  </ul>
+  <img src="assets/results/fig8.png" alt="Weekly Viewership"/>
+  <p><strong>Insight</strong>: Friday is optimal for new releases due to weekend engagement.</p>
+
+  <h2>Assumptions and Limitations</h2>
+  <ul>
+    <li>Analysis uses <code>release_date</code> for timing-based insights, not actual viewing timestamps.</li>
+    <li>Limited by lack of viewer metadata (genre, country, age, device, etc.).</li>
+  </ul>
+  <p>Plan to perform <strong>Content Strategy Analysis V2</strong> with enhanced datasets.</p>
+
+  <h2>Key Takeaways for Content Strategy</h2>
+  <ul>
+    <li>Focus on <strong>Shows</strong> for higher viewership.</li>
+    <li>Invest in <strong>English</strong> and <strong>Korean</strong> content.</li>
+    <li>Schedule major releases in <strong>Winter</strong>, especially <strong>December</strong>.</li>
+    <li>Launch content on <strong>Fridays</strong> for peak audience capture.</li>
+  </ul>
+
+  <h2>Future Steps</h2>
+  <p>Will source additional data (genre, location, daily views) to enhance analysis in upcoming version.</p>
+
+  <h2>Author</h2>
+  <div class="center">
+    <img src="assets/PYE.SVG" alt="Author Banner" class="banner"/>
+    <p><strong>Pavan Yellathakota</strong><br/>Date: MAR 2025</p>
+  </div>
+
+  <h2>Contact Information</h2>
+  <ul>
+    <li>Email: <a href="mailto:pavanyellathakota@gmail.com">pavanyellathakota@gmail.com</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/pavanyellathakota/">Pavan Yellathakota</a></li>
+    <li>GitHub: <a href="https://github.com/PavanYellathakota">Pavan Yellathakota</a></li>
+    <li>Portfolio: <a href="https://pye.pages.dev">pye.pages.dev</a></li>
+  </ul>
+
+</body>
+</html>
